@@ -122,7 +122,7 @@ int I2CEEBlockDevice::_sync()
             return 0;
         }
 
-        wait_ms(1);
+        thread_sleep_for(1);
     }
 
     return BD_ERROR_DEVICE_ERROR;
